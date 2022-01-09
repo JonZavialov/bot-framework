@@ -11,11 +11,12 @@
 ## ⚙️ Configuration
 
 1. Create a discord bot
-2. Add a file to the root folder named `logins.json`
-3. In the file, add the following. Your bot's token goes in the `token` field.  
+2. Add a file to the root folder named `config.json`
+3. In the file, add the following. Your bot's token goes in the `token` field, and your bot's prefix goes in the `prefix` field.
 ```json
 {
-    "token": "your_token_here"
+    "token": "your_token_here",
+    "prefix": "your_prefix_here"
 }
 ```
 
