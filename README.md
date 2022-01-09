@@ -19,6 +19,15 @@
     "prefix": "your_prefix_here"
 }
 ```
+4. Add commmands in the commands directory, the format is the following:
+```js
+    function commandName(msg, args){
+        //do command function
+    }
+
+    module.exports = commandName
+```
+Note: `msg` is a discord Message object, and args are passed as an array. If your command doesn't have arguements, don't include an `args` parameter.
 
 
 ## 👨‍💻 Developlment

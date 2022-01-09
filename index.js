@@ -5,15 +5,16 @@ const client = new Client({  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD
 
 const config = require('./config.json')
 
+const parseCommand = require('./utils/parseCommand')
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`)
 })
 
 client.on('messageCreate', (msg) => {
-    if (msg.content == 'ping') {
-        msg.reply('pong')
+    if(msg.content.startsWith(config.prefix)){
+        parseCommand(msg)
     }
-    console.log(msg.content)
 })
 
 client.login(config.token)
