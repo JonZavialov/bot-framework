@@ -105,4 +105,4 @@ dist
 
 # Project
 node_modules
-/logins.json
+/config.json
