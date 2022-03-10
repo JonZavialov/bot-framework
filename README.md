@@ -32,4 +32,4 @@ Note: `msg` is a discord Message object, and args are passed as an array. If you
 
 ## 👨‍💻 Developlment
 
-This project is a currently in progress by Jonathan.
+This project has been completed by Jonathan.
